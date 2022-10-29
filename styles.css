@@ -1,2 +1,219 @@
-/* 540 x 282 */
-/* 255 x 282 */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+:root {
+  --primary-font: "Barlow Semi Condensed", sans-serif;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+
+  /* primary colors */
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  /* neutral colors */
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--Light-grayish-blue);
+  color: var(--White);
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h4,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+/* purple and black 540 x 282 */
+/* other 255 x 282 */
+
+.container {
+  width: 100%;
+}
+
+.grid {
+  padding: 4rem;
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    "first first second third"
+    "fourth fifth fifth third";
+  place-content: center;
+  grid-template-columns: repeat(4, minmax(100px, 0.21fr));
+}
+
+.purple,
+.grey,
+.white-lg,
+.white-sm,
+.black {
+  box-shadow: rgba(255, 255, 255, 0.371) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.084) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.grid section {
+  border-radius: 10px;
+}
+
+.purple {
+  background-color: var(--Moderate-violet);
+  grid-area: first;
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 0;
+}
+
+.voilet-circle {
+  border: 3px solid #9b6bdd;
+}
+
+.grey {
+  background-color: var(--Very-dark-grayish-blue);
+  grid-area: second;
+}
+
+.grey-circle {
+  border: 3px solid grey;
+}
+
+.white-lg {
+  background-color: var(--White);
+  grid-area: third;
+}
+
+.white-circle {
+  border: 3px solid lightgray;
+}
+
+.white-lg,
+.white-sm h1 {
+  color: var(--Very-dark-blackish-blue);
+}
+
+.white-lg,
+.white-sm blockquote {
+  color: var(--Very-dark-blackish-blue);
+  line-height: 1.4;
+}
+
+.white-lg,
+.white-sm h4 {
+  color: var(--Very-dark-blackish-blue);
+}
+
+.white-lg,
+.white-sm p {
+  color: var(--Very-dark-blackish-blue);
+}
+
+.white-sm {
+  background-color: var(--White);
+  grid-area: fourth;
+}
+
+.black {
+  background-color: var(--Very-dark-blackish-blue);
+  grid-area: fifth;
+}
+
+.black-circle {
+  border: 3px solid rgb(239, 239, 239);
+}
+
+/* Card Stylings */
+
+.container {
+  width: 100%;
+}
+
+.card {
+  height: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic img {
+  width: 100%;
+  max-width: 32px;
+  box-shadow: rgba(253, 254, 255, 0.2) 0px 8px 24px;
+  border-radius: 50%;
+}
+
+.profile-bar {
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+.light-text {
+  opacity: 0.5;
+  /* letter-spacing: 1px; */
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  opacity: 0.7;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+h1 {
+  width: 95%;
+  font-size: 2rem;
+  font-weight: var(--font-weight-600);
+  line-height: 1.4;
+  letter-spacing: 0.9px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 950px) {
+  .container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .grid {
+    display: initial;
+  }
+
+  .purple,
+  .grey,
+  .white-lg,
+  .white-sm,
+  .black {
+    width: 95%;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 90vw;
+    margin-top: 4rem;
+  }
+}
