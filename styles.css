@@ -240,4 +240,7 @@ h2 {
     max-width: 90vw;
     margin-top: 4rem;
   }
+  .purple {
+    background-position: right top;
+  }
 }
