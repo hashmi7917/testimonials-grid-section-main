@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot 2022-10-29 at 5 06 47 PM](https://user-images.githubusercontent.com/38833326/198829879-4436520a-05c4-4b22-804c-e23db58145fe.png)
+![Screenshot](https://user-images.githubusercontent.com/38833326/198845925-abc5abe0-d392-442b-8bd6-d8d0fe54f2f5.png)
 
 Mobile Screen
 <br/>
