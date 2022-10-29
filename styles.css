@@ -112,7 +112,7 @@ a {
 }
 
 .white-lg,
-.white-sm h4 {
+.white-sm h2 {
   color: var(--Very-dark-blackish-blue);
 }
 
@@ -189,7 +189,7 @@ h1 {
   letter-spacing: 0.9px;
 }
 
-h4 {
+h2 {
   font-size: 1.5rem;
   letter-spacing: 1px;
 }
@@ -239,9 +239,5 @@ h4 {
     width: 75%;
     max-width: 90vw;
     margin-top: 4rem;
-  }
-
-  .white-lg {
-    display: none;
   }
 }
